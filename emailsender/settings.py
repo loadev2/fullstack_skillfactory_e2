@@ -52,12 +52,12 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'emailsender.urls'
 
-EMAIL_HOST = 'smtp.yandex.ru'
-EMAIL_PORT = 587
-EMAIL_HOST_USER = 'dev7est@yandex.by'
-EMAIL_HOST_PASSWORD = 'Bomba1234*'
-DEFAULT_FROM_EMAIL = 'dev7est@yandex.by'
-EMAIL_USE_TLS = True
+#EMAIL_HOST = 'smtp.yandex.ru'
+#EMAIL_PORT = 587
+#EMAIL_HOST_USER = 'dev7est@yandex.by'
+#EMAIL_HOST_PASSWORD = 'Bomba1234*'
+#DEFAULT_FROM_EMAIL = 'dev7est@yandex.by'
+#EMAIL_USE_TLS = True
 
 
 TEMPLATES = [
