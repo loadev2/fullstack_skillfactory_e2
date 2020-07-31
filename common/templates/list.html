@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+ 
+{% block content %}
+
+<div>
+ Not sent<br>
+ {% for msg in msgs %}
+  {% if msg.status == 2 %}
+    {{ msg.title }}
+  {% endif %}
+ {% endfor %}
+</div>
+
+<div>
+ Sent<br>
+ {% for msg in msgs %}
+  {% if msg.status == 1 %}
+    {{ msg.title }}<br>
+  {% endif %}
+ {% endfor %}
+</div>
+
+{% endblock %}
