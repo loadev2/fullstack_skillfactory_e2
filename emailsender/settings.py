@@ -25,7 +25,7 @@ SECRET_KEY = '=u5@!&-pxg!w==@)gifi@ud6$u+y9%&krwh4mw@(&!*d^uu8lf'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','https://pure-mesa-04751.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1','pure-mesa-04751.herokuapp.com']
 
 
 # Application definition
