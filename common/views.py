@@ -19,12 +19,10 @@ def add_email(request):
     if request.method == 'POST':
         message = request.POST['message']
         sec = int(request.POST['time'])
-        print(message)
         msg = Message(title="Msg - {}".format(datetime.now()), body=message, status=2)
         msg.save()
         t = threading.Timer(sec, send_email, args=(message, msg))
         t.start()
-        print('Ending tread')
 
     return render(request, 'index.html', {})
 

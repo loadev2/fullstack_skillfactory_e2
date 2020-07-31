@@ -2,22 +2,26 @@
  
 {% block content %}
 
-<div>
- Not sent<br>
+<div class="pl-3 pr-3">
+ Not sent
+ <ul class="list-group">
  {% for msg in msgs %}
   {% if msg.status == 2 %}
-    {{ msg.title }}
+  <li class="list-group-item">{{ msg.title }}</li>
   {% endif %}
  {% endfor %}
+ </ul>
 </div>
 
-<div>
- Sent<br>
+<div class="mt-5 pl-3 pr-3">
+ Sent
+ <ul class="list-group">
  {% for msg in msgs %}
   {% if msg.status == 1 %}
-    {{ msg.title }}<br>
+  <li class="list-group-item">{{ msg.title }}</li>
   {% endif %}
  {% endfor %}
+ </ul>
 </div>
 
 {% endblock %}
